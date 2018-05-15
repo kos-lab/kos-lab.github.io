@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Hello World and Ncloud vulnerability disclosure
+title: Hello World and Intelbras Ncloud vulnerability disclosure
 author: Pedro Aguiar
 ---
 
-Welcome to the first post in this blog, written by the Kos-Lab team, the Cyber Security unit of Kryptus(http://kryptus.com), a brazilian Cyber Defense company.
+Welcome to the first post in this blog, written by the Kos-Lab team, the Cyber Security unit of [Kryptus](http://kryptus.com), a brazilian Cyber Defense company.
 
 A few weeks ago, we got our hands in a Intelbras Ncloud 300 device, an interesting wireless router, with features like a Torrent Client and USB storage, after a few days taking a look at it, the following was discovered:
 
@@ -17,9 +17,12 @@ John the Ripper quickly cracked that hash, the password is: cary
 
 ## Unauthenticated configuration backup
 
+
 When a request to /cgi-bin/ExportSettings.sh is done, a configuration "backup" is retrieved, which includes the web interface username and password: 
 
 ![Ncloud1.png]({{ site.baseurl }}/images/Ncloud1.png)
+
+The following CVE was assigned to this issue: CVE-2018-11094
 
 ## Unauthenticated wireless password disclosure
 
