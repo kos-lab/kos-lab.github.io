@@ -41,7 +41,7 @@ When a request to /goform/RebootSystem is done, the device reboots:
 
 ![Ncloud3.png]({{ site.baseurl }}/images/Ncloud3.png)
 
-Timeline:
-9 May, 2018 - Vendor was notified via email about the vulnerability
-10 May, 2018 - Vendor responded to the email asking for more details
-14 May, 2018 - Vendor called us and informed us that the product was discontinued and there was no possibility of a patch being developed, they also agreed with full disclosure.
+Timeline:  
+9 May, 2018 - Vendor was notified via email about the vulnerability  
+10 May, 2018 - Vendor responded to the email asking for more details  
+14 May, 2018 - Vendor called us and informed us that the product was discontinued and there was no possibility of a patch being developed, they also agreed with full disclosure.  
