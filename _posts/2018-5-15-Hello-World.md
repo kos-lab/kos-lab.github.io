@@ -4,6 +4,8 @@ title: Hello World and Intelbras Ncloud vulnerability disclosure
 author: Pedro Aguiar
 ---
 
+Author: Pedro Aguiar (pedro.aguiar@kryptus.com)
+
 Welcome to the first post in this blog, written by the Kos-Lab team, the Cyber Security unit of [Kryptus](https://kryptus.com), a brazilian Cyber Defense company.
 
 A few weeks ago, we got our hands in a Intelbras Ncloud 300 device, an interesting wireless router, with features like a Torrent Client and USB storage, after a few days taking a look at it, the following was discovered:
@@ -39,3 +41,7 @@ When a request to /goform/RebootSystem is done, the device reboots:
 
 ![Ncloud3.png]({{ site.baseurl }}/images/Ncloud3.png)
 
+Timeline:
+9 May, 2018 - Vendor was notified via email about the vulnerability
+10 May, 2018 - Vendor responded to the email asking for more details
+14 May, 2018 - Vendor called us and informed us that the product was discontinued and there was no possibility of a patch being developed, they also agreed with full disclosure.
