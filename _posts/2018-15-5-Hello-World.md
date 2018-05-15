@@ -1,0 +1,37 @@
+---
+layout: post
+title: Hello World and Ncloud vulnerability disclosure
+author: Pedro Aguiar
+---
+
+Welcome to the first post in this blog, written by the Kos-Lab team, the Cyber Security unit of Kryptus(http://kryptus.com), a brazilian Cyber Defense company.
+
+A few weeks ago, we got our hands in a Intelbras Ncloud 300 device, an interesting wireless router, with features like a Torrent Client and USB storage, after a few days taking a look at it, the following was discovered:
+
+## Unprotected Serial port (UART)
+
+Connecting to the serial interface, a root shell was obtained, using this method, the root password hash was also obtained:
+`root:uax./Fu15Jqo6:0:0:Adminstrator:/:/bin/sh`
+
+John the Ripper quickly cracked that hash, the password is: cary
+
+## Unauthenticated configuration backup
+
+When a request to /cgi-bin/ExportSettings.sh is done, a configuration "backup" is retrieved, which includes the web interface username and password: 
+
+![Ncloud1.png]({{ site.baseurl }}/images/Ncloud1.png)
+
+## Unauthenticated wireless password disclosure
+
+When a request to /goform/updateWPS is done, the wireless network password is disclosed:
+
+![Ncloud2.png]({{ site.baseurl }}/images/Ncloud2.png)
+
+The URL /goform/vpnBasicSettings is also vulnerable to this, being possible to enable or disable the VPN.
+
+## Unauthenticated device reboot
+
+When a request to /goform/RebootSystem is done, the device reboots:
+
+![Ncloud3.png]({{ site.baseurl }}/images/Ncloud2.png)
+
