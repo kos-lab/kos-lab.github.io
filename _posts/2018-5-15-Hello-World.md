@@ -15,8 +15,9 @@ Connecting to the serial interface, a root shell was obtained, using this method
 
 John the Ripper quickly cracked that hash, the password is: cary
 
-## Unauthenticated configuration backup
+![Ncloud0.jpeg]({{ site.baseurl }}/images/Ncloud0.jpeg)
 
+## Unauthenticated configuration backup
 
 When a request to /cgi-bin/ExportSettings.sh is done, a configuration "backup" is retrieved, which includes the web interface username and password: 
 
@@ -36,5 +37,5 @@ The URL /goform/vpnBasicSettings is also vulnerable to this, being possible to e
 
 When a request to /goform/RebootSystem is done, the device reboots:
 
-![Ncloud3.png]({{ site.baseurl }}/images/Ncloud2.png)
+![Ncloud3.png]({{ site.baseurl }}/images/Ncloud3.png)
 
