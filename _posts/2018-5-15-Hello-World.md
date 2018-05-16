@@ -19,7 +19,7 @@ John the Ripper quickly cracked that hash, the password is: cary
 
 Those credentials can be used on the telnet port, this is particularly critical because it is possible for the attacker to see any files the user has stored in the USB device connected.
 
-In cases where the user root does not work, the credential was replaced with the web interface credentials, which can be obtained exploring the next vulnerability:
+In cases where the user root does not work, it was replaced with the web interface credentials, which can be obtained exploring the next vulnerability:
 
 ![Ncloud0.jpeg]({{ site.baseurl }}/images/Ncloud0.jpeg)
 
