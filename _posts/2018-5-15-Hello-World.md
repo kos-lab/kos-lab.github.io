@@ -6,7 +6,7 @@ author: Pedro Aguiar
 
 Author: Pedro Aguiar (pedro.aguiar@kryptus.com)
 
-Welcome to the first post in this blog, written by the Kos-Lab team, the Cyber Security unit of [Kryptus](https://kryptus.com), a brazilian Cyber Defense company.
+Welcome to the first post in this blog, written by the Kos-Lab team, the Cyber Security Unit of [Kryptus](https://kryptus.com), a brazilian Cyber Defense company.
 
 A few weeks ago, we got our hands in a Intelbras Ncloud 300 device, an interesting wireless router, with features like a Torrent Client and USB storage, after a few days taking a look at it, the following was discovered:
 
@@ -16,6 +16,10 @@ Connecting to the serial interface, a root shell was obtained, using this method
 `root:uax./Fu15Jqo6:0:0:Adminstrator:/:/bin/sh`
 
 John the Ripper quickly cracked that hash, the password is: cary
+
+Those credentials can be used on the telnet port, this is particularly critical because it is possible for the attacker to see any files the user has stored in the USB device connected.
+
+In cases where the user root does not work, the credential was replaced with the web interface credentials, which can be obtained exploring the next vulnerability:
 
 ![Ncloud0.jpeg]({{ site.baseurl }}/images/Ncloud0.jpeg)
 
