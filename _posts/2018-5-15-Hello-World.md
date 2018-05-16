@@ -28,7 +28,7 @@ In cases where the user root does not work, it was replaced with the web interfa
 
 ## Unauthenticated configuration backup
 
-When a request to /cgi-bin/ExportSettings.sh is done, a configuration "backup" is retrieved, which includes the web interface username and password: 
+Even though the web interface of the device has a login system, it is not properly enforced, therefore, when a request to /cgi-bin/ExportSettings.sh is done, a configuration "backup" is retrieved, which includes the web interface username and password: 
 
 ![Ncloud1.png]({{ site.baseurl }}/images/Ncloud1.png)
 
