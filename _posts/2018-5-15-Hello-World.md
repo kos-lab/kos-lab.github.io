@@ -13,8 +13,9 @@ A few weeks ago, we got our hands in a Intelbras Ncloud 300 device, an interesti
 ## Unprotected Serial port (UART)
 
 Connecting to the serial interface, a root shell was obtained, using this method, the root password hash was also obtained:
-`root:uax./Fu15Jqo6:0:0:Adminstrator:/:/bin/sh`
-
+```
+root:uax./Fu15Jqo6:0:0:Adminstrator:/:/bin/sh
+```
 John the Ripper quickly cracked that hash, the password is: cary
 
 Those credentials can be used on the telnet port, this is particularly critical because it is possible for the attacker to see any files the user has stored in the USB device connected.
