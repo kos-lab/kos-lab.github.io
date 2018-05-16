@@ -14,9 +14,9 @@ A few weeks ago, we got our hands in a Intelbras Ncloud 300 device, an interesti
 
 Connecting to the serial interface, a root shell was obtained, using this method, the root password hash was also obtained:
 
-```
+{% highlight conf %}
 root:uax./Fu15Jqo6:0:0:Adminstrator:/:/bin/sh
-```
+{% endhighlight %}
 
 John the Ripper quickly cracked that hash, the password is: cary
 
