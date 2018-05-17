@@ -48,6 +48,10 @@ When a request to /goform/RebootSystem is done, the device reboots:
 
 ![Ncloud3.png]({{ site.baseurl }}/images/Ncloud3.png)
 
+A exploit was created to demonstrate the issues described in this post:
+
+![Ncloud4.png]({{ site.baseurl }}/images/Ncloud4.png)
+
 Timeline:  
 9 May, 2018 - Vendor was notified via email about the vulnerability  
 10 May, 2018 - Vendor responded to the email asking for more details  
