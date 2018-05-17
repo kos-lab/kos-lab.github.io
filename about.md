@@ -8,7 +8,7 @@ Blog dedicated to post InfoSec stuff
 
 ### More Information
 
-We are the Kos-Lab, the Cyber Security Unit from [Kryptus](kryptus.com).
+We are the Kos-Lab, the Cyber Security Unit from [Kryptus](https://kryptus.com).
 
 ### Contact me
 
